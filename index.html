@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Unicons for the icons to be used-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- favicon link-->
+    <link rel="website icon" href="https://img.icons8.com/?size=100&id=tBhUT8WSBhWT&format=png&color=000000" type="image/x-icon">
+
+    <!-- Email JS Script -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "8sryY8XO6D5GVi3Fn",
+      });
+   })();
+    </script>
+
+    <title>Portfolio</title>
+</head>
+<body>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Mark's</p>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#randc" class="nav-link">R-and-C</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn"><a href="pdf/Resume.pdf" target="_blank">Download CV <i class="uil uil-file-alt"></i></a></button>
+        </div>
+        <div class="mode">
+            <div class="moon-sun" id="toggle-switch">
+                <i class="uil uil-moon" id="moon"></i>
+                <i class="uil uil-sun" id="sun"></i>
+            </div>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Hi, I'm Mark Ademoye</span>
+            </div>
+            <div class="featured-name">
+                <p>I'm a <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>Just a lad interested in quality assurance, automation testing, data mining and software development. Oh, and i do game quite a bit 😅.</p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn blue-btn"><a style="text-decoration: none; color:white;" href="#contact">Contact Me</a></button>
+                <button class="btn"><a href="pdf/Resume.pdf" target="_blank">Download CV <i class="uil uil-file-alt"></i></a></button>
+            </div>
+            <div class="social_icons">
+                <div class="icon"><a href="https://www.instagram.com/mark.d.dallas/" target="_blank"><i class="uil uil-instagram"></i></a></div>
+                <div class="icon"><a href="https://www.linkedin.com/in/oluwadamifola-ademoye-3a8388177/" target="_blank"><i class="uil uil-linkedin"></i></a></div>
+                <div class="icon"><a href="https://github.com/NotYourMain" target="_blank"><i class="uil uil-github"></i></a></div>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="images/Profile.jpg" alt="avatar">
+            </div>
+          </div>
+          
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>Introduction</h3>
+                    <p>I am quite versed in HTML, CSS and JavaScript amongst other languages, and a lot of fun
+                       frameworks and libraries which enable me to create some nice interactive features.
+                    </p>
+                    <div class="about-btn">
+                        <button class="btn"><a href="pdf/Resume.pdf" target="_blank">Download CV <i class="uil uil-import"></i></a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                        <span>Vue</span>
+                        <span>React</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                        <span>JAVA</span>
+                        <span>Python</span>
+                        <span>C++</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Database</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>MySQL</span>
+                        <span>MongoDB</span>
+                        <span>FireBase</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Testing</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>Katalon</span>
+                        <span>Cypress</span>
+                        <span>Selenium</span>
+                        <span>Appium</span>
+                    </div>
+                </div>
+            </div>
+          </div>
+       </section>
+
+       <!-- -------------- PROJECT BOX ---------------- -->
+
+       <section class="section" id="projects">
+          <div class="top-header">
+              <h1>Projects</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+                <h3>Muscle Man's My Mom Jokes</h3>
+                <label>A website that scrolls through a Json file containing the all the "My Mom" jokes made throughout Regular Show.</label>
+                <p><a href="http://muscle-man-my-mom-jokes.vercel.app/" target="_blank">Check out here:</a></p>
+            </div>
+            <div class="project-box">
+                <h3>Mark's Code Bin</h3>
+                <label>A user friendly website that compiles and runs HTML, CSS and Javascript code online while showing it's output.</label>
+                <p><a href="https://markscodebin.netlify.app/" target="_blank">Check out here:</a></p>
+            </div>
+            <div class="project-box">
+                <h3>Barcode Database Management System</h3>
+                <label>An application with CRUD functionalities. It was designed to scan barcodes of items and store them in a database online for quick access.</label>
+                <p><a href="https://github.com/NotYourMain/Project" target="_blank">Check out here:</a></p>
+            </div>
+          </div>
+       </section>
+    </section>
+
+    <!-- -------------- Research And Certifications ---------------- -->
+    <section class="section" id="randc">
+       <div class="top-header">
+         <h1>Research and Certifications</h1>
+       </div>
+       <div class="row">
+         <div class="col">
+             <div class="about-info">
+                 <h3>Research Papers</h3>
+                 <p>Research Project on the "Design and Implementation of a  Barcode Database Management System"</p>
+                 <p>Research Project on a "Machine Learning Model For Filtering Inappropriate Language and Hate Speech" </p>
+                 <p>Reseearch Project on a "Building A Model to Identify The Risk Factors Involved In Predicting Early
+                    Mutation Of Prostate Cancer"</p>
+             </div>
+         </div>
+         <div class="col">
+             <div class="skills-box">
+                 <div class="skills-header">
+                     <h3>New Horizons</h3>
+                 </div>
+                 <div class="skills-list">
+                     <span>New Horizons Oracle 12C SQL Fundamentals</span>
+                     <span>New Horizons Oracle 12C Administrator</span>
+                     <span>New Horizons Android X8 Development</span>
+                     <span>New Horizons Java SE8 OCA & OCP</span>
+                     <span>New Horizons Installing and Configuring Windows 10 Client</span>
+                     <span>New Horizons CSCU</span>
+                     <span>New Horizons CompTIA A+</span>
+                 </div>
+             </div>
+             <div class="skills-box">
+                 <div class="skills-header">
+                     <h3>Testing</h3>
+                 </div>
+                 <div class="skills-list">
+                     <span>ISQTB Certified Foundation Level</span>
+                 </div>
+             </div>
+         </div>
+       </div>
+    </section>
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Get in touch!</h1>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: ademoyedamifola@gmail.com</p>
+                    <p><i class="uil uil-phone"></i> Tel: +234-81-4684-8651</p>
+                </div>
+             </div>
+             <div class="col">
+                <div class="form-control">
+                    <div class="form-inputs">
+                        <input type="text" id="name" class="input-field" placeholder="Name">
+                        <input type="text" id="email" class="input-field" placeholder="Email">
+                    </div>
+                    <div class="text-area">
+                        <textarea id="message" placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button type="submit" onclick="sendMail()" class="btn">Send <i class="uil uil-message"></i></button>
+                    </div>
+                </div>
+             </div>
+          </div>
+       </section>
+
+    </main>
+
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>Mark Ademoye</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#randc">R-and-C</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon"><a href="https://www.instagram.com/mark.d.dallas/" target="_blank"><i class="uil uil-instagram"></i></a></div>
+            <div class="icon"><a href="https://www.linkedin.com/in/oluwadamifola-ademoye-3a8388177/" target="_blank"><i class="uil uil-linkedin"></i></a></div>
+            <div class="icon"><a href="https://github.com/NotYourMain" target="_blank"><i class="uil uil-github"></i></a></div>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Mark Ademoye</a> - All rights reserved</p>
+        </div>
+    </footer>
+
+    </div>
+
+
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="index.js"></script>
+</body>
+</html>
